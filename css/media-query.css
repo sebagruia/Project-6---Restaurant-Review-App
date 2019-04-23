@@ -1,34 +1,124 @@
+@media screen and (min-width:320px) {
+    nav h1 a {
+        font-size: 0.8em;
+    }
 
-@media screen and (max-width:450px){
-    
-    
-    
+    nav h1 {
+        padding-top: 5%;
+    }
+
+
+}
+
+@media screen and (min-width:600px) {
+    nav h1 a {
+        font-size: 1em;
+    }
+
+    nav h1 {
+        padding-top: 4%;
+    }
+
 }
 
 
-@media screen and (min-width:650px){
+
+@media screen and (min-width:650px) {
     #restaurants-list li {
-        width:50%;
-        
+        width: 50%;
+
     }
-    
-    
+
+    #restaurants-list li div {
+        padding-left: 15px;
+        padding-right: 15px;
+
+
+    }
+
+    #restaurants-list li h1 {
+        font-size: 13pt;
+
+
+    }
+
+    #restaurants-list p {
+
+        font-size: 10pt;
+    }
+
+
 }
 
-@media screen and (min-width:900px){
-  #restaurants-list li {
-        width:33.333333%;
-        
+@media screen and (min-width:768px) {
+    nav h1 a {
+        font-size: 1.2em;
     }
-    
-    
+
+    nav h1 {
+        padding-top: 3%;
+    }
+
 }
 
-@media screen and (min-width:1280px){
-    
-     #restaurants-list li {
-        width:25%;
-        
+
+@media screen and (min-width:900px) {
+
+    nav h1 {
+        padding-top: 2.5%;
     }
-    
+
+    #restaurants-list li {
+        width: 33.333333%;
+
+    }
+
+    #restaurants-list li div {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 10px;
+
+
+
+    }
+
+    #restaurants-list li h1 {
+        font-size: 12pt;
+
+
+    }
+
+    #restaurants-list p {
+
+        font-size: 10pt;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+
+    nav h1 {
+        padding-top: 1.8%;
+    }
+
+    #restaurants-list li {
+        width: 25%;
+
+    }
+
+    #restaurants-list li div {
+        padding-left: 20px;
+        padding-right: 20px;
+
+
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+    nav h1 {
+        padding-top: 1.5%;
+    }
+
+
 }
