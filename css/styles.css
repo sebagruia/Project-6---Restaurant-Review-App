@@ -94,6 +94,20 @@ section {
     text-align: center;
     text-transform: uppercase;
 }
+/* ====================== Skip link  ====================== */
+.skip{
+    position:absolute;
+    left: -300px;
+    top: 25px;
+    background-color: #fff;
+    color:#f18200;
+    padding:10px;
+    border-radius:10px;
+}
+.skip:focus{
+    left:5px;
+    color:#f18200;
+}
 
 
 /* ====================== Navigation ====================== */
@@ -169,13 +183,17 @@ nav h1 a {
     align-items: center;
 }
 
-.filter-options h2 {
+
+
+.filter-options h2  {
     color: white;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1;
     margin: 0 20px;
 }
+
+
 
 .filter-options select {
     background-color: white;
@@ -187,6 +205,11 @@ nav h1 a {
     margin: 10px;
     padding: 0 10px;
     width: 200px;
+}
+.filter-options select:focus,
+.filter-options select:hover
+{
+    background-color:#f5b55f;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -245,6 +268,12 @@ nav h1 a {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+#restaurants-list li a:hover,
+#restaurants-list li a:focus
+{
+    background-color:#ff7600;
 }
 
 /* ====================== Restaurant Details ====================== */
