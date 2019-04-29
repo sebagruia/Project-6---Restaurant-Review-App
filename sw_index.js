@@ -1,6 +1,3 @@
-
-// This version Caches only the bellow components of the site
-
 const cacheName = 'v1';
 const cacheComponents = [
     '/index.html',
@@ -69,10 +66,36 @@ self.addEventListener('activate', event => {
 
 //Call Fetch Event (Fetching the entire Site)
 
+//self.addEventListener('fetch', event => {
+//    console.log('Service Worker: Fetching from Cache');
+//    event.respondWith(
+//        fetch(event.request)
+//        .catch((err) => caches.match(event.request)));
+//
+//});
+
+
 self.addEventListener('fetch', event => {
     console.log('Service Worker: Fetching from Cache');
     event.respondWith(
-        fetch(event.request)
-        .catch((err) => caches.match(event.request)));
+        caches.match(event.request).then(response => {
+            if (response) {
+                return response;
 
+            } else {
+                return fetch(event.request)
+                    .then(response => {
+                        const responseClone = response.clone();
+                        caches.open(cacheName)
+                            .then(cache => {
+                                cache.put(event.request, responseClone);
+                            })
+                        return response;
+
+                    })
+                    .catch(err => console.error(err));
+            }
+        })
+
+    );
 });
