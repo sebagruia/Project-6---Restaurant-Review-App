@@ -1,0 +1,25 @@
+{
+  "name": "project-6---restaurant-review-app",
+  "version": "1.0.0",
+  "description": "---\r #### _Three Stage Course Material Project - Restaurant Reviews_",
+  "main": "server.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebagruia/Project-6---Restaurant-Review-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebagruia/Project-6---Restaurant-Review-App/issues"
+  },
+  "homepage": "https://github.com/sebagruia/Project-6---Restaurant-Review-App#readme"
+}
